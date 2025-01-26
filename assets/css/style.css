@@ -1,0 +1,289 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#reportsContainer {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#reportsContainer h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#reportsContainer p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+#reportsContainer p:first-of-type {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#reportsContainer p:last-of-type {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+#graphDataContainer {
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#reportsContainer, #aboutContainer{
+    display: none;
+}
+
+#coinsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid black; 
+    text-align: center;
+}
+
+.coin {
+    border: 1px black solid;
+    flex:1 1 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#reports, #about {
+    display: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.moreInfoContainer{
+    margin: none;
+    text-align: center;
+    display: none;
+    border: 1px solid black;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #d20d0d;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+.coin {
+        position: relative;
+}
+    
+.toggle-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: gray;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        width: 70px;
+        text-align: center;
+}
+
+@keyframes jump {
+        0% { transform: translate(-50%, -50%) scale(1); }
+        50% { transform: translate(-50%, -50%) scale(1.1); }
+        100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+.jumpWindow {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border: 2px solid black;
+        z-index: 1000;
+        animation: jump 0.5s ease-in-out;
+}
+
+.jumpWindowButtons{
+        background-color: rgb(134, 134, 233);
+        color: white;
+        height: 30px;
+        width: 30px;
+}
+.face{
+    width: 150px;
+    height: 200px;    
+}    
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Green background */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; /* Dark background for the nav */
+    padding: 10px 0;
+    border-bottom: 2px solid #444;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 0 10px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    background-color: #575757; /* Darker shade on hover */
+    border-radius: 5px;
+}
+
+/* Search Box Styles */
+#search {
+    padding: 8px 10px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#searchBtn {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#searchBtn:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* About Section Styles */
+#aboutContainer {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#aboutContainer h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#aboutContainer p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+#aboutContainer p img.face {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutContainer p:last-of-type {
+    font-style: italic;
+    color: #333;
+}
+@media (max-width: 480px) {
+    .coin{
+      flex: 1 1 100%;        
+    }   
+}
+@media (max-width: 760px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap; /* Allow content to wrap to the next line */
+        justify-content: center;
+        padding: 10px; /* Adjust padding for smaller screens */
+        width: 100%; /* Ensure the nav takes full width of the screen */
+        box-sizing: border-box; /* Include padding in the width calculation */
+    }
+
+    nav a {
+        padding: 10px 15px; /* Reduce padding for nav links */
+        font-size: 0.9em; /* Slightly smaller font size */
+        margin: 5px 5px; /* Reduce margins to prevent overflow */
+    }
+
+    #search, #searchBtn {
+        flex: 1 1 100%; /* Search box takes full width on mobile */
+        margin: 10px 0; /* Add spacing between search and other elements */
+        text-align: center;
+    }
+}

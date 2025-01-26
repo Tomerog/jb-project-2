@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+
+    <script defer src="assets/js/app.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Crypto Tracker</h1>
+    </header>
+    <nav>
+      <a href="#" id="navCoins">Coins</a>
+      <a href="#" id="navReports">Reports</a>
+      <a href="#" id="navAbout">About</a>
+      <input type="text" id="search" placeholder="Enter Coin ID" />
+      <button id="searchBtn">Search</button>
+    </nav>
+    <main id="main">
+      <section id="coinsSection"><div id="coinsContainer"></div></section>
+      <section id="reportsContainer"></section>
+      <section id="aboutContainer"></section>
+    </main>
+  </body>
+</html>
